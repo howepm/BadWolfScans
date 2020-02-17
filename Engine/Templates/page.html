@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>{{$PageTitle}} &bull; [Bad Wold Scans]</title>
+
+    <link rel="stylesheet" href="{{$PAGE_URL_FOLDER}}Assets/stylesheets/main.css?debug={{$DEBUG_STR}}&forceRefresh={{$FORCE_REFRESH_CODE}}">
+    {{$ExtraStylesheets}}
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    <nav id="topBar">
+      <div id="logoArea">
+        <a id="logoLink" href="{{$PAGE_URL_FOLDER}}">
+          <img src="{{$PAGE_URL_FOLDER}}Assets/images/logo_invert.png" alt="[Bad Wolf Scans] logo (inverted colour)" id="logo">
+          <span>[Bad Wolf Scans]</span>
+        </a>
+      </div>
+      <div id="topLinks">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Series</a>
+        <a href="#">Contact</a>
+        <a href="#">Login</a>
+        <a href="#">Register</a>
+        <a href="#social">Social</a>
+      </div>
+      <div class="clear"></div>
+    </nav>
+    <div id="content">
+      {{$PageContent}}
+    </div>
+    <nav id="footer">
+      <div class="spacer"></div>
+      <div id="fenceInside">
+        <div class="left">
+          <img src="{{$PAGE_URL_FOLDER}}Assets/images/logo_invert_large.png" id="footerLogo" alt="[Bad Wolf Scans] logo">
+        </div>
+        <div class="right">
+          <div class="half">
+            <div class="pad">
+              <small>
+                <strong class="oswald uppercase">[Bad Wolf Scans]</strong> is a scanlation manga group founded in late 2019/the start of 2020 by <a href="http://reddit.com/u/Phcnobody">Phcnobody</a> (Kashiwagi) on the <a href="http://reddit.com/r/DeadTube">DeadTube subreddit</a>.
+                We do not claim copyright for any of our series, will not work on series licensed for the West and will largey target smaller, unserved series or dropped series.<br>
+                <div class="alignRight">
+                  <a href="#" class="underline"><strong>Read more about us &raquo;</strong></a>
+                </div>
+              </small>
+            </div>
+          </div>
+          <div class="half">
+            <div class="pad">
+              <div class="center">
+                <div class="">
+                  <li class="fa fa-envelope" id="footerContact"></li>
+                </div>
+                <a name="social"></a>
+                <strong class="title">Contact & Social Media</strong><br>
+                <a href="mailto:BadWolfScans@gmx.com">Contact form</a><br>
+                <a href="mailto:BadWolfScans@gmx.com">E-mail us</a><br>
+                <a href="https://discord.gg/bB8nFg">Discord</a><br>
+                <a href="http://mangadex.org">Mangadex</a><br>
+                <a href="http://old.reddit.com/r/BadWolfScans">Subredit</a><br>
+                &nbsp;<br>
+              </div>
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="spacer"></div>
+    </nav>
+    <div id="finalLine">
+      <small>
+        Our only official domains are <strong><a href="http://badwolfscans.com">BadWolfScans.com</a></strong> and <strong><a href="http://badwolfscans.ws">BadWolfScans.ws</a></strong>. Any changes or new domains will be announced here on the news section, on our subreddit or in our discord. Please check these sources for any other links claiming to be us! All our work is available for 100% free and available to both read online and download on our site. Please support the original group and use our website over aggregators if possible, and do not remove any credits to us when resharing.<br>
+        &nbsp;<br>
+        We do not claim copyright for any of the series we work on, nor do we work on series that are licensed in English. Please consider supporting the official releases by seeing any merchandise you see, the Japanese volumes for your collection and to experience them in print, and the series volumes if they're available in your langage or a language you are interested in (French, for example, has <strong><em>many, many titles available</em></strong> that you may assume <strong>would not</strong> be translated.)<br>
+        &nbsp;<br>
+        We are not manga pirates, nor is this a piracy website. Please do not share links to other copyrighted content on our website! You may link to content we'be worked on in the comments and on our subreddit but no other groups.<br>
+        &nbsp;<br>
+        Any original work, such as the website, is &copy; [BadWolfScans] 2020-Present, but all series and related media are held by their respective countries.
+      </small>
+    </div>
+    {{$ExtraJavascript}}
+    <script src="{{$PAGE_URL_FOLDER}}Assets/js/main.js?debug={{$DEBUG_STR}}&forceRefresh={{$FORCE_REFRESH_CODE}}" charset="utf-8"></script>
+  </body>
+</html>

@@ -1,0 +1,101 @@
+{{$RegisterErrors}}
+
+<div id="regitserIntro">
+  <h1>Register for {{$GROUP_NAME}}</h1>
+  <div class="text">
+    Right now, registering adds features like being able to download chapters not just read them online, a profile, being able to be notified via e-mail of new releases, commenting on articles and a few other small features, as well as the usual user system stuff of messaging other users and whatnot.<br>
+    &nbsp;<br>
+    This is just because the website is in early days. We will be adding multiple features as the group and our community grows such as forums and much more. If you have suggestions for features, use the contact page to get in touch with your ideas!<br>
+    &nbsp;<br>
+    Thanks for joining the {{$GROUP_NAME}} family!
+  </div>
+</div>
+
+<a name="registerForm"></a>
+<form class="registerForm" id="registerForm" action="{{$PAGE_URL_FOLDER}}?module=register" method="post">
+
+  <!--[
+  <div class="formElement" id="formElement">
+    <div class="labelZone">
+      <div class="label"></div>
+      <div class="decription"></div>
+    </div>
+    <div class="inputZone">
+      <div class="inputLine"><input type="text" name="" placeholder="" class="inputArea"></div>
+    </div>
+  </div>
+
+  <div class="formElement" id="formElement">
+    <div class="labelZone">
+      <div class="label"></div>
+      <div class="decription"></div>
+    </div>
+    <div class="submitZone">
+      <div class="submitLine"><input type="submit" name="" value="" class="submitButton"></div>
+    </div>
+  </div>
+  ]-->
+
+  <div class="formElement" id="formElementUsername">
+    <div class="labelZone">
+      <div class="label">Username</div>
+      <div class="description">The name you will be seen as on the website</div>
+    </div>
+    <div class="inputZone">
+      <div class="inputLine"><input value="{{$Form[Username][Value]}}" type="text" name="username" placeholder="Username" class="inputArea"></div>
+    </div>
+  </div>
+
+  <div class="formElement" id="formElementPassword">
+    <div class="labelZone">
+      <div class="label">Password</div>
+      <div class="decription tinySize">The password you will use to access your account. <strong>Minimum of 8 characters</strong>.</div>
+    </div>
+    <div class="inputZone">
+      <div class="inputLine"><input value="{{$Form[Password][Value]}}" type="password" name="password" placeholder="Password" class="inputArea"></div>
+      <div class="inputLine"><input value="{{$Form[PasswordConfirm][Value]}}" type="password" name="passwordConfirm" placeholder="...and again, for confirmation" class="inputArea"></div>
+    </div>
+  </div>
+
+  <div class="formElement" id="formElementEmail">
+    <div class="labelZone">
+      <div class="label">e-Mail address</div>
+      <div class="decription">An e-mail address we can use to contact you on</div>
+    </div>
+    <div class="inputZone">
+      <div class="inputLine"><input value="{{$Form[Email][Value]}}" type="text" name="email" placeholder="your (valid) e-mail Address" class="inputArea"></div>
+    </div>
+  </div>
+
+  <div class="formElement" id="formElement">
+    <div class="labelZone">
+      <div class="description">Please review the following terms, conditions and rules before registering here at {{$GROUP_NAME}}. This is so we can both keep on the up-and-up and also foster a good, respectful community.</div>
+      &nbsp;
+    </div>
+    <div class="agreeZone">
+      <div class="agreement">
+        <div class="halves">
+          <h1>Terms &amp; Conditions</h1>
+          <div name="terms" class="agreementTextarea">
+            {{$TermsConditions}}
+          </div>
+        </div>
+        <div class="halves">
+          <h1>Rules</h1>
+          <div name="terms" class="agreementTextarea">
+            {{$Rules}}
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="accept">
+        <input type="checkbox" name="agreeSignup" value="{{$Form[AgreeSignup][Value]}}">
+        I agree to the above terms and rules
+      </div>
+    </div>
+    <div class="submitZone">
+      <div class="submitLine"><input type="submit" name="SubmitForm" value="Register" class="submitButton" id="registerButton"></div>
+    </div>
+  </div>
+
+</form>

@@ -1,0 +1,20 @@
+<div class="newsStory">
+  <div class="newsInfo">
+    <a class="title" href="?module=story&id={{$News[ID]}}">{{$News[Title]}}</a>
+    <div class="dateLine">
+      <em>Posted <strong>{{$News[Posted]}}</strong>, last modified <strong>{{$News[Modified]}}</strong></em>
+    </div>
+  </div>
+  <div class="storyContent">
+    {{$News[Content]}}
+  </div>
+  <div class="commentLine">
+    <a href="?module=story&id={{$News[ID]}}" class="underline bold">Permalink</a>
+    &bull;
+    <a href="?module=story&id={{$News[ID]}}#comments" class="underline bold">101 Comments</a>
+    &bull;
+    <a href="?module=story&id={{$News[ID]}}#addComment" class="underline bold">Add your comment &raquo;</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </div>
+</div>
+&nbsp;

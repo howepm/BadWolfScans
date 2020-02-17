@@ -1,0 +1,40 @@
+<div id="homepage">
+  <div id="homeContent">
+    <div class="alignRight miniSize pad">
+      <a href="?module=news" class="bold underline">View news archives &raquo;</a>
+    </div>
+    &nbsp;
+    {{$HOMEPAGE_CONTENT}}
+    &nbsp;
+    <div class="alignRight miniSize pad">
+      <a href="?module=news" class="bold underline">View news archives &raquo;</a>
+    </div>
+    &nbsp;
+  </div>
+  <div id="homeSidebar">
+    <div class="homeWidget">
+      <img src="{{$PAGE_URL_FOLDER}}/Assets/images/topImage.png" id="topImage" alt="[Bad Wolf Scans]">
+    </div>
+    <div class="homeWidget">
+      <strong class="title">Latest News</strong><br>
+      {{$LatestNews}}
+      <div class="alignRight miniSize">
+        <a href="?module=news" class="bold underline">View news archives &raquo;</a>
+      </div>
+      &nbsp;
+    </div>
+    <div class="homeWidget">
+      <strong class="title">Latest Releases</strong><br>
+      {{$LatestReleases}}
+    </div>
+    <div class="homeWidget">
+      <strong class="title">User Area</strong><br>
+      {{$UserArea}}
+    </div>
+    <div class="homeWidget">
+      <strong class="title">User Stats</strong><br>
+      {{$UserStats}}
+    </div>
+  </div>
+  <div class="clear"></div>
+</div>
